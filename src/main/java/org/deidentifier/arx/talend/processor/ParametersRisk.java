@@ -10,11 +10,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.talend.sdk.component.api.configuration.ui.layout.GridLayout.FormType.MAIN;
+
 @Data
-@GridLayout({
+@GridLayout(names = MAIN,value = {
     // the generated layout put one configuration entry per line,
     // customize it as much as needed
-    @GridLayout.Row({"highestRisk"}),
+        @GridLayout.Row({"highestRisk"}),
         @GridLayout.Row({"averageRisk"}),
         @GridLayout.Row({ "recordsAtRisk" }),
         @GridLayout.Row({ "qis" })
