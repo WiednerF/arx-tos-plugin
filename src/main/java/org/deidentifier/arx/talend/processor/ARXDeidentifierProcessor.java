@@ -100,7 +100,7 @@ public class ARXDeidentifierProcessor implements Serializable {
     public void endBatch(@Output final OutputEmitter<JsonObject> outputMain,@Output("Error") final OutputEmitter<JsonObject> error) {
         // symmetric method of the beforeGroup() executed after the chunk processing
         // Note: if you don't need it you can delete it
-        if(buffer!=null&&this.configuration.getRuntimeSettings().doRowBlocking()){
+        if(buffer!=null){
             this.rowProcessing(outputMain,error);
             this.buffer=new ArrayList<>();
             this.buffer.add(this.header);

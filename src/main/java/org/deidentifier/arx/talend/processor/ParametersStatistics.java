@@ -125,7 +125,6 @@ public class ParametersStatistics {
      * @param output Output
      */
     public void trackSuppressedCells(List<String[]> input, List<String[]> output) {
-
         // Skip header
         for (int row = 1; row < output.size(); row++) {
             String[] outArray = output.get(row);
