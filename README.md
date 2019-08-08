@@ -30,7 +30,7 @@ mvnw talend-component:deploy-in-studio -Dtalend.component.studioHome=<Studio-Hom
 If this is not working as it should, use the following commands instead of the deploy-in-studio command:
 
 ```bash
-mvnw talend-component.car
+mvnw talend-component:car
 java -jar target\ARXDeidentifier-1.0.0.car studio-deploy --location <Studio Location>
 ```
 
